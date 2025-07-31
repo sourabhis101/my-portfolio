@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sourabh's portfolio </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="shortcut icon" href="src/favicon.svg" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <style>
+    .container-custom {
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+     .gradient-text {
+      font-size: 48px;
+      background: -webkit-linear-gradient(#1303f8, #b201f8);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+    }
+
+    @media (min-width: 992px) {
+      .container-custom {
+        max-width: calc(100% - 200px);
+        /* 100px on each side */
+      }
+    }
+
+    .icon-tile:hover {
+      transform: rotate(0deg) scale(1.1);
+
+    }
+
+    .icon-tile {
+      width: 80px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(255, 255, 255);
+
+      border-radius: 16px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.788);
+      transform: rotate(-10deg);
+      transition: transform 0.3s ease;
+    }
+
+    .icon-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 20px;
+      justify-items: center;
+      padding: 65px 25px;
+    }
+
+    .icon-tile img {
+      max-width: 50%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body style="background-color: #f7f8fa;">
+  <header
+    style=" position: sticky; top: 0;  z-index: 100; margin-top: 3px; box-shadow: 0px 0px 7px 0px rgb(230, 229, 229); border-radius: 12px; background-color: rgb(253, 253, 253); ">
+    <div class="row justify-content-around">
+      <div class="col-4" style="margin-top: 5px;">
+
+        <img src="src/favicon.svg" alt="" style="width: 40px;"  >
+        
+      </div>
+      <div class="col-4">
+        <div class="d-flex flex-row-reverse">
+
+
+          <div class="p-2">
+            <a href="#Project"
+              class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
+              <h4>Projects</h4>
+            </a>
+          </div>
+          <div class="p-2">
+            <a href="#About" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">
+              <h4>About</h4>
+            </a>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container-custom px-3 px-md-5 ">
+      <div style="margin-top: 20px;"> </div>
+      <h2 style="font-size: 48px;">
+        Hello, I am <span class="gradient-text" >Sourabh</span>
+        👋
+      </h2>
+      <p>
+        a self-taught Django developer, specializing in building scalable and efficient backend systems.
+      </p>
+      <div class="d-flex gap-3 flex-wrap" style="text-align: center;">
+        <a href="mailto:sengersourabh101@gmail.com" class="btn btn-dark">
+          <i class="fa-solid fa-file"></i> Resume
+        </a>
+        <a href="mailto:sengersourabh101@gmail.com" class="btn btn-outline-dark">
+          <i class="fas fa-envelope me-2"></i>Email
+        </a>
+
+
+      </div>
+      <br>
+      <div style="margin-top: 20px;"> </div>
+      <h3 style="font-size: 45;">My Skills</h3>
+      <div class="container">
+        <div class="icon-grid">
+          <!-- Replace src with the actual logo URLs or local images -->
+          <div class="icon-tile"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"></div>
+          <div class="icon-tile"><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1va4bwpsW9QRYB07ogAGZY1iOpf0JXn10oA&s"
+              alt="Python"></div>
+          <div class="icon-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              alt="HTML5"></div>
+          <div class="icon-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              alt="CSS3"></div>
+          <div class="icon-tile"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+              alt="Tailwind CSS"></div>
+          <div class="icon-tile"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+          </div>
+
+          <div class="icon-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+              alt="Git"></div>
+          <div class="icon-tile"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"
+              id="About"></div>
+        </div>
+
+
+      </div>
+
+      <div style="margin-top: 20px;">
+
+        <h3 style="font-size: 45;"> About me
+        </h3>
+        <br>
+        <p>
+          Hi! I'm <b> Sourabh</b>, a passionate Python developer with a strong foundation in backend development and web
+          technologies. 
+        </p>
+        <h4>🎯 What I Do:</h4>
+        <p>I specialize in building web applications using Python and Django. My focus is on creating clean, efficient
+          backend systems that power modern web applications.</p>
+        <h4>💻 Technical Skills:</h4>
+        <ul>
+          <li>
+            Python (Django)
+          </li>
+          <li>
+            Web Development (HTML, CSS, Bootstrap)
+          </li>
+          <li>
+            Database Management (Postresql)
+
+          </li>
+          <li>
+            Version Control (Git)
+
+          </li>
+          <li>
+            Problem-solving and debugging
+
+          </li>
+        </ul>
+        <h4>🎓 Background:</h4>
+        <p>Currently completed my degree from School of Open Learning, University of Delhi, I've been dedicating my time
+          to mastering backend development. Through hands-on projects and continuous learning, I've built practical
+          experience in web development principles and modern programming practices.
+        </p>
+        <h4>🚀 What I'm Looking For:</h4>
+        <p>I'm actively seeking opportunities as a Python Developer or Backend Developer where I can contribute to
+          innovative projects, work with experienced teams, and continue growing my technical skills.</p>
+      </div>
+      <br id="Project">
+
+      <div style="margin-top: 20px;"> </div>
+      <h3> Recent Projects</h3>
+      <br>
+
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="/src/medium.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fas fa-server me-2"></i>Medium_clone</h5>
+              <p class="card-text">
+                A Medium-style blogging platform built with Django, Editor.js,
+                Bootstrap, and PostgreSQL. Users can create, edit, and delete posts, comments,
+                and user profiles. Fully responsive design and production-ready for deployment.
+            </div>
+            <div class="card-footer " style="text-align: center;">
+              <small class="text-body-secondary"> <a href="https://medium-n3s8.onrender.com/" class="btn btn-primary">
+                  Live Demo</a>
+                <a href="https://github.com/sourabhis101/medium_clone" class="btn btn-outline-primary"> View
+                  Repo</a></small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="src/to do.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fas fa-brain me-2"></i> Django To-do App</h5>
+              <p class="card-text">This Django-based To-Do List web app helps users manage tasks
+                efficiently with a clean UI. Built with Django, HTML, CSS, and Bootstrap, it
+                allows users to add, edit, delete, and complete tasks easily.</p>
+            </div>
+            <div class="card-footer" style="text-align:center">
+              <small class="text-body-secondary"> <a href="https://django-to-do-app-8t49.onrender.com/"
+                  class="btn btn-primary"> Live Demo</a>
+                <a href="https://github.com/sourabhis101/Django-to-do-app" class="btn btn-outline-primary"> View
+                  Repo</a></small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <br>
+      <div style="margin-top: 20px;"> </div>
+      <section class="mb-4">
+
+
+
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="row">
+          <div class="col-12">
+            <p class="mb-4">Any questions, proposals, or collaborations? Feel free to reach out.</p>
+            <div class="d-flex gap-3 flex-wrap" style="text-align: center;">
+              <a href="mailto:sengersourabh101@gmail.com" class="btn btn-outline-primary">
+                <i class="fas fa-envelope me-2"></i>Email
+              </a>
+              <a href="https://www.linkedin.com/in/sengersourabh" class="btn btn-outline-primary">
+                <i class="fab fa-linkedin me-2"></i>LinkedIn
+              </a>
+              <a href="https://github.com/sourabhis101" class="btn btn-outline-primary">
+                <i class="fab fa-github me-2"></i>GitHub
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer style="text-align: center;">
+        <p>© 2024 <b>Sourabh </b> , All right reserved.</p>
+      </footer>
+
+    </div>
+
+
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
